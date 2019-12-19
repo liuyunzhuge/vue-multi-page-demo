@@ -1,7 +1,7 @@
 const createPage = (name, title, chunk = '')=>{
     return {
       entry: `src/pages/${name}/main.js`,
-      template: `public/${name}.html`,
+      template: 'public/index.html',
       filename: `${name}.html`,
       title,
       chunks: ['chunk-vendors', 'chunk-common', chunk || name]
